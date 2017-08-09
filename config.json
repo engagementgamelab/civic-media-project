@@ -1,0 +1,8 @@
+{
+	"name": "civic-media-project",
+	"database": "civic-media-project",
+	"subdomain": "starter-keystone4",
+	"admin_nav": { 
+									"index": ["Index"]
+								}
+}
