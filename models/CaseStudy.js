@@ -34,9 +34,14 @@ CaseStudy.add({
 
 	name: { type: String, label: 'Name', required: true, initial: true },
 
-	title: { type: Types.Markdown, label: 'Case Study Info'},
-	image: { type: Types.CloudinaryImage, label: 'Case Study Image'}, 
-	authors: { type: Types.Relationship, ref: 'Contributor', label: 'Authors'} 
+	body: { type: Types.Markdown, label: 'Case Study Body Text' },
+	references: { type: Types.Markdown, label: 'Case Study References' },
+	acknowledgements: { type: Types.Markdown, label: 'Case Study Acknowledgements' },
+
+	comments: { type: Types.Relationship, label: 'Archived Disqus Peer Reviewed Comments', ref: 'Comment'},
+
+	image: { type: Types.CloudinaryImage, label: 'Case Study Image' }, 
+	authors: { type: Types.Relationship, ref: 'Contributor', label: 'Authors' }
 
 });
 
